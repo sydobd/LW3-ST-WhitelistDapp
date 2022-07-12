@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Web3Modal from "web3Modal";
+import Web3Modal from "web3modal";
 import { providers, Contract } from "ethers";
 import { useState, useRef, useEffect } from "react";
 import { CONTRACT_ADDRESS, abi } from "../constants";
@@ -134,7 +134,7 @@ export default function Home() {
       });
       connectWallet();
     }
-  }, [walletConnected]);
+  }, []);
   return (
     <div>
       <Head>
